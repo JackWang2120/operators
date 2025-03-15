@@ -34,8 +34,8 @@
 template <typename T>
 infiniopStatus_t cpu_Clip(ClipCpuDescriptor_t desc,
                              void *b, void const *a) {
-    T *b_data = reinterpret_cast<T *>(b);
-    const T *a_data = reinterpret_cast<T const *>(a);
+    auto b_data = reinterpret_cast<T *>(b);
+    auto a_data = reinterpret_cast<T const *>(a);
     float min_value = desc->min_value;
     float max_value = desc->max_value;
     // std::cout<<"min_value: "<<f16_to_f32(f32_to_f16(min_value))<<std::endl;
