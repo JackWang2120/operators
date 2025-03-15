@@ -17,3 +17,4 @@
 #include "ops/rotary_embedding/rotary_embedding.h"
 #include "ops/swiglu/swiglu.h"
 #include "tensor/tensor_descriptor.h"
+#include "ops/clip/clip.h"

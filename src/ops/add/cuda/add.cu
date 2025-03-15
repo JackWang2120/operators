@@ -71,7 +71,7 @@ __global__ void add(
 template<typename Tdata, typename BTdata>
 void _add_nv_gpu(AddCudaDescriptor_t desc, Tdata *c, Tdata const *a, Tdata const *b, uint64_t data_size, uint64_t pack_size, uint64_t offset, void *stream) {
     if (data_size == 0) {
-        return;
+        return;      
     }
     dim3 blockDims = dim3(std::min(static_cast<uint64_t>(256), data_size));
     dim3 gridDims = dim3(std::min(ROUND_UP_DIV(data_size, blockDims.x), desc->max_grid_size));
