@@ -19,3 +19,4 @@
 #include "tensor/tensor_descriptor.h"
 #include "ops/clip/clip.h"
 #include "ops/where/where.h"
+#include "ops/gather/gather.h"
