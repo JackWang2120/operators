@@ -20,3 +20,6 @@
 #include "ops/clip/clip.h"
 #include "ops/where/where.h"
 #include "ops/gather/gather.h"
+#include "ops/reduce/reduce_min.h"
+#include "ops/reduce/reduce_max.h"
+#include "ops/reduce/reduce_mean.h"
